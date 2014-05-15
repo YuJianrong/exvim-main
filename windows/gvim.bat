@@ -1,6 +1,6 @@
 @echo off
 set cwd=%cd%
-gvim ^
+%cwd%\..\vim\vim74\gvim ^
     -u %cwd%\.vimrc ^
     --cmd "let g:exvim_dev=1" ^
     --cmd "let g:exvim_dev_path='%cwd%'" ^
