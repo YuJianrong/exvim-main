@@ -326,25 +326,6 @@ nmap <A-F1> :call setreg('/','')<CR>
 
 " F2: reserved for tagbar
 
-" F11 is reserved for EnhCommentify
-" <C-F11>: inser/remove /**/
-function! RemoveCPPBlockCmt()
-    if searchpair('\/\*','','\*\/','n') != 0
-        norm! [/xx]/hxx
-    endif
-endfunction
-vmap <C-F11> c/*<ESC>igp*/<ESC>
-nmap <C-F11> :call RemoveCPPBlockCmt()<CR>
-" A-F11: Insert/delete '#if 0' and '#endif' between the selection
-function! InsertIF() range
-    let lstline = a:lastline + 1 
-    call append( a:lastline , "#endif")
-    call append( a:firstline -1 , "#if 0")
-    exec ":" . lstline
-endfunction
-vmap <A-F11> :call InsertIF()<CR>
-nmap <A-F11> mo[#dd]#dd`o
-
 " F12: toogle the menu and toolbar
 function! ToggleMenuToolbar()
     if match(&guioptions, 'm') != -1
