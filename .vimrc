@@ -85,10 +85,11 @@ endif
 " load .vimrc.plugins and .vimrc.plugins.local
 let vimrc_plugins_path = '~/.vimrc.plugins'
 let vimrc_plugins_local_path = '~/.vimrc.plugins.local'
-if exists('g:exvim_dev') && exists('g:exvim_dev_path')
-    let vimrc_plugins_path = g:exvim_dev_path.'/.vimrc.plugins'
-    let vimrc_plugins_local_path = g:exvim_dev_path.'/.vimrc.plugins.local'
+if exists('g:exvim_custom_path')
+    let vimrc_plugins_path = g:exvim_custom_path.'/.vimrc.plugins'
+    let vimrc_plugins_local_path = g:exvim_custom_path.'/.vimrc.plugins.local'
 endif
+
 if filereadable(expand(vimrc_plugins_path))
     exec 'source ' . fnameescape(vimrc_plugins_path)
 endif
@@ -472,9 +473,10 @@ nnoremap <unique> <silent> <leader>sw "_yiw:s/\(\%#\w\+\)\(\W\+\)\(\w\+\)/\3\2\1
 "/////////////////////////////////////////////////////////////////////////////
 
 let vimrc_local_path = '~/.vimrc.local'
-if exists('g:exvim_dev') && exists('g:exvim_dev_path')
-    let vimrc_local_path = g:exvim_dev_path.'/.vimrc.local'
+if exists('g:exvim_custom_path')
+    let vimrc_local_path = g:exvim_custom_path.'/.vimrc.local'
 endif
+
 if filereadable(expand(vimrc_local_path))
     exec 'source ' . fnameescape(vimrc_local_path)
 endif
