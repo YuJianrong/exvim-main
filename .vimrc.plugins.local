@@ -24,4 +24,11 @@ let g:solarized_contrast = "high"
 unmap <unique> <F11>
 map <unique> <F11> <Plug>NERDCommenterToggle
 
+" ex-project
+" ---------------------------------------------------
+let g:ex_project_winsize = 50
+
+
+" vim-scripts/StarRange
+" ---------------------------------------------------
 Plugin 'vim-scripts/StarRange'
