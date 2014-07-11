@@ -236,6 +236,9 @@ map <Up> gk
 map <Down> gj
 " make visual paste to copy the content pasted(like in windows)
 vnoremap p pgvy
+" for local list
+nmap <Leader>n :lnext<CR>
+nmap <Leader>p :lpre<CR>
 
 
 ""--------------------------------------------------------------------------------
