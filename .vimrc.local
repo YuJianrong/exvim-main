@@ -402,3 +402,12 @@ endfunction
 
 nmap <leader><F1> :call Show_exVimEasyQuickReference()<CR>
 
+if has('gui_running')
+    set background=light
+else
+    set background=dark
+endif
+colorscheme solarized
+
+let g:solarized_contrast = "high"
+

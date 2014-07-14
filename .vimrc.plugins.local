@@ -2,15 +2,6 @@
 " but before 'filetype plugin on', 'filetype indent on' and 'syntax on' been executed. 
 " This file is designed to be safe to add your own plugins and plugins' configuration.
 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
-colorscheme solarized
-
-let g:solarized_contrast = "high"
-
 
 ""--------------------------------------------------------------------------------
 "" ==== Plugin settings ====
