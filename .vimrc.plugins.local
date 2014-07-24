@@ -13,7 +13,8 @@
 " Plugin 'scrooloose/nerdcommenter'
 
 unmap <unique> <F11>
-map <unique> <F11> <Plug>NERDCommenterToggle
+map <unique> <F11> <Plug>NERDCommenterAlignBoth
+map <unique> <leader><F11> <Plug>NERDCommenterUncomment
 
 " ex-project
 " ---------------------------------------------------
