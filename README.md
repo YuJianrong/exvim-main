@@ -2,6 +2,7 @@
 
 - - -
 - [Intro](#intro)
+- [Community](#community)
 - [Installation](http://exvim.github.io/docs/install/)
 - [Getting Start](http://exvim.github.io/docs/getting-start/)
 - [Plugins](http://exvim.github.io/docs/plugins/)
@@ -101,3 +102,8 @@ The repository contains:
 - Templates for vim-plugins and external tools.
 - exVim develop environment.
 
+## Community
+
+- [Chinese] QQ群: 319248144
+- [Chinese] Tower讨论群: 请发我Email KarasAya@gmail.com 申请加入
+- [English] Comming Soon...
