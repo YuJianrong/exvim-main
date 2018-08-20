@@ -2,5 +2,53 @@
 " but before 'filetype plugin on', 'filetype indent on' and 'syntax on' been executed. 
 " This file is designed to be safe to add your own plugins and plugins' configuration.
 
-" Add your customized plugins:
-" Example: Plugin 'foo/bar/foobar'
+
+""--------------------------------------------------------------------------------
+"" ==== Plugin settings ====
+
+
+
+" nerdcommenter: invoke by <leader>c<space>, <leader>cl, <leader>cu, <F11> or <C-F11>
+" ---------------------------------------------------
+" Plugin 'scrooloose/nerdcommenter'
+
+unmap <unique> <F11>
+map <unique> <F11> <Plug>NERDCommenterAlignBoth
+map <unique> <leader><F11> <Plug>NERDCommenterUncomment
+
+" ex-project
+" ---------------------------------------------------
+let g:ex_project_winsize = 50
+
+
+" vim-scripts/StarRange
+" ---------------------------------------------------
+Plugin 'vim-scripts/StarRange'
+
+" rust lang
+Plugin 'rust-lang/rust.vim'
+
+" jsx lang
+" Plugin 'mxw/vim-jsx'
+
+" json lang
+Plugin 'elzr/vim-json'
+let g:vim_json_syntax_conceal = 0
+
+" Plugin 'kien/ctrlp.vim'
+let g:ctrlp_mruf_case_sensitive = 0
+let g:ctrlp_by_filename = 1
+let g:ctrlp_custom_ignore = {
+            \ 'dir':  '\v[\/](\.(git|hg|svn))|(node_modules|manifest|testacular|uita|target|libs)$',
+            \ 'file': '\v\.(png|jpg|icon)$'
+            \ }
+
+
+" Plugin 'pangloss/vim-javascript'
+let g:javascript_enable_domhtmlcss = 1
+
+" syntastic
+let g:syntastic_javascript_checkers=['eslint', 'jshint']
+" Better :sign interface symbols
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'

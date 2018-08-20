@@ -44,6 +44,11 @@
 # ignore vimentry files
 .exvim.*/*              IGNORE
 
+$ min files
+*.min.js                 IGNORE
+*-min.js                 IGNORE
+*_min.js                 IGNORE
+
 # c/cpp header
 *.h			    text
 *.h++           text
